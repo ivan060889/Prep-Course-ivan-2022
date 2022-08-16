@@ -207,10 +207,11 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí  
   for(var i =0 ; i<arreglo.length -1 ; i++)
   {
-    if(arreglo[i]!==arreglo[i + 1 ])
+    if(arreglo[i]!==arreglo[i+1])
     {
       return false;
     }
+    return true;
     
   }
 
@@ -232,6 +233,7 @@ function mesesDelAño(array) {
       arrayResultado.push(array[i]);
 
     }
+  }
     if(arrayResultado.length===3)
     {
       return arrayResultado
@@ -241,26 +243,24 @@ function mesesDelAño(array) {
       return "No se encontraron los meses pedidos";
     }
   }
-}
+
 
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var nuevoarreglo= [];
-  for(var i = 0 ; i<array.length; i++)
+  var arraynuevo=[];
+  for(var i =0; i< array.length ; i++)
+  {
+    if(array[i]>100)
     {
-      if(array[i]>100)
-      {
-        nuevoarreglo.push[array[i]];
-      }
+      arraynuevo.push(array[i]);
+    }
+  }
+  return arraynuevo;
 
-    } 
- }
- return nuevoarreglo;
-
-
+}
 
 
 function breakStatement(numero) {
@@ -271,9 +271,22 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
+    }
+  }
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
 }
-
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -282,8 +295,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      suma = suma + 2;
+      array.push(suma);
+    }
+  }
+  return array;
 }
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
