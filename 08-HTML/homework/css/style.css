@@ -1,0 +1,21 @@
+h1
+{
+    color: darkorange;
+}
+img
+{
+    height: 400px;
+}
+#thirdDiv
+{
+    background: rgb(240, 255, 196);
+    height: 900px; 
+    width:  680px;
+    padding: 50px;
+    border: 2px solid black;
+}
+#spanId
+{
+    margin: 50px;
+    font-size: 18px;
+}
