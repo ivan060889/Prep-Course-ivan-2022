@@ -1,5 +1,32 @@
-h1
+body{
+     background:url("/08-HTML/homework/img/piura-peru.jpg")
+
+}
+.flex-contaier
 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    flex-wrap: row wrap;
+    margin: auto;
+  
+}
+.divClass{
+
+    margin: 5px;
+    border: 1px solid rgb(19, 23, 5);
+    background-color: rgba(53, 48, 188, 0.416);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+    line-height: 50px;
+    text-align: center;
+
+}
+h1,h2,h3,h4
+{
+    text-align: center;
     color: darkorange;
 }
 img
@@ -8,7 +35,8 @@ img
 }
 #thirdDiv
 {
-    background: rgb(240, 255, 196);
+    margin: 0px auto;
+    background: rgba(240, 255, 196, 0.193);
     height: 900px; 
     width:  680px;
     padding: 50px;
